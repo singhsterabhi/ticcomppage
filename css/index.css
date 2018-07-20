@@ -1,0 +1,127 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #474747;
+    height: 100vh;
+    background: url("../images/background.png");
+    background-position: left bottom;
+    background-repeat: no-repeat; 
+    background-size: 50%;
+}
+
+.main {
+    min-height: 80%;
+    padding-top: 100px;
+}
+
+.left {
+    text-align: center;
+}
+
+.right {
+    display: block;
+    position: relative;
+    padding-right: 150px;
+}
+
+.logo img {
+    width: 30%;
+}
+
+.tic h1 {
+    font-size: 100px;
+}
+
+h1 {
+    font-weight: 900;
+    margin: 0;
+}
+
+.win {
+    font-size: 40px;
+}
+
+.win h1 {
+    font-size: 40px;
+
+}
+
+.middle {
+    padding: 20px 0 30px 0;
+}
+
+.display {
+    width: 230px;
+    height: 230px;
+    background-image: url("../images/display.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    position: relative;
+    left: 80px;
+}
+
+.display h1{
+    width: 200px;
+    font-size: 15px;
+    background: #ffffff;
+    padding: 20px 0px 0 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    border-top-left-radius: 20px;
+}
+
+.amount {
+    font-size: 80px;
+    transform: rotate(90deg);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 145px;
+}
+
+.login{
+    /* position: relative; */
+}
+
+button {
+    background-color: #9742F5;
+    color: #ffffff;
+    width: 90%;
+    border-radius: 20px!important;
+    /* position: absolute;
+    right: 0; */
+    float: right;
+    padding: 5px 30px!important;
+}
+
+button:hover{
+    background-color: rgb(119, 40, 209);
+    box-shadow: 0px 2px #858585;
+}
+
+.facebook{
+    float: left;
+}
+
+.arrow{
+    float: right;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    right: 80px;
+    width: 100%;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.footer p{
+    float: right;
+}
+
+.terms{
+    color: #9742F5;
+}
