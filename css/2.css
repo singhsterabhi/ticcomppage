@@ -1,18 +1,20 @@
-
 .main {
     min-height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 30px;
 }
 
 .main>h1 {
     font-weight: 900;
+    padding: 20px;
 }
 
 .display {
     position: relative;
+    padding: 20px;
 }
 
 .progress {
@@ -39,18 +41,71 @@
 
 .progress p{
     font-size: 70px;
+    color: #9742F5;
 }
 
-.sideimage {
+.one {
     height: 150px;
     width: 150px;
-    background-image: url("../images/display.jpg");
+    background-image: url("../images/Cafe_icon.png");
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: 15px;
+    border: 2px solid #E1E1E1;
     position: absolute;
     top: 0%;
-    transform: translateX(160px) translateY(50px) rotate(10deg);
+    transform: translateX(-240px) translateY(70px)  rotate(-13deg);
     z-index: -1;
-    box-shadow: #474747 2px 2px 5px;
+}
+
+.two {
+    height: 150px;
+    width: 150px;
+    background: #ffffff;
+    background-image: url("../images/Hiking_icon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    border: 2px solid #E1E1E1;
+    position: absolute;
+    top: 0%;
+    transform: translateX(-130px) translateY(50px)  rotate(10deg);
+    z-index: -1;
+}
+
+.three {
+    height: 150px;
+    width: 150px;
+    background: #ffffff;
+    background-image: url("../images/Beach_icon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    border: 2px solid #E1E1E1;
+    position: absolute;
+    top: 0%;
+    transform: translateX(180px) translateY(50px) rotate(10deg);
+    z-index: -1;
+}
+
+.four {
+    height: 150px;
+    width: 150px;
+    background-image: url("../images/Foodtruck_icon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    border: 2px solid #E1E1E1;
+    position: absolute;
+    top: 0%;
+    transform: translateX(300px) translateY(60px) rotate(10deg);
+    z-index: -2;
+}
+
+h2{
+    text-align: center;
+    width: 450px;
+    font-size: 18px;
 }
 
 button {
@@ -68,6 +123,7 @@ button:hover {
 }
 
 .cancel {
+    padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
