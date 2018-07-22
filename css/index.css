@@ -18,9 +18,10 @@ body {
 }
 
 .right {
-    display: block;
-    position: relative;
-    padding-right: 150px;
+    padding-right: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end
 }
 
 .logo img {
@@ -38,6 +39,7 @@ h1 {
 
 .win {
     font-size: 40px;
+    
 }
 
 .win h1 {
@@ -45,7 +47,10 @@ h1 {
 }
 
 .middle {
-    padding: 20px 0 30px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 20px 10px;
 }
 
 .display {
@@ -56,7 +61,7 @@ h1 {
     background-position: center;
     border-radius: 20px;
     position: relative;
-    left: 80px;
+    /* left: 80px; */
 }
 
 .display h1 {
@@ -76,18 +81,16 @@ h1 {
     transform: rotate(90deg);
     width: 100px;
     height: 100px;
-    position: absolute;
-    right: 145px;
 }
 
 .login {
-    /* position: relative; */
+    padding: 10px 0px;
 }
 
 button {
     background-color: #9742F5;
     color: #ffffff;
-    width: 90%;
+    width: 400px;
     border-radius: 20px !important;
     float: right;
     padding: 5px 30px !important;
