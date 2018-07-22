@@ -4,7 +4,7 @@ body {
     height: 100vh;
     background: url("../images/background.png");
     background-position: left bottom;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     background-size: 50%;
 }
 
@@ -42,7 +42,6 @@ h1 {
 
 .win h1 {
     font-size: 40px;
-
 }
 
 .middle {
@@ -60,7 +59,7 @@ h1 {
     left: 80px;
 }
 
-.display h1{
+.display h1 {
     width: 200px;
     font-size: 15px;
     background: #ffffff;
@@ -81,7 +80,7 @@ h1 {
     right: 145px;
 }
 
-.login{
+.login {
     /* position: relative; */
 }
 
@@ -89,25 +88,25 @@ button {
     background-color: #9742F5;
     color: #ffffff;
     width: 90%;
-    border-radius: 20px!important;
+    border-radius: 20px !important;
     float: right;
-    padding: 5px 30px!important;
+    padding: 5px 30px !important;
 }
 
-button:hover{
+button:hover {
     background-color: rgb(119, 40, 209);
     box-shadow: 0px 2px #858585;
 }
 
-.facebook{
+.facebook {
     float: left;
 }
 
-.arrow{
+.arrow {
     float: right;
 }
 
-.footer{
+.footer {
     position: fixed;
     bottom: 0;
     right: 80px;
@@ -116,10 +115,10 @@ button:hover{
     padding-bottom: 20px;
 }
 
-.footer p{
+.footer p {
     float: right;
 }
 
-.terms{
+.terms {
     color: #9742F5;
 }
