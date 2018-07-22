@@ -1,0 +1,36 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #474747;
+    height: 100vh;
+    background: url("../images/background.png");
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    /* background-size: 50%; */
+}
+
+.logo {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+
+.logo img {
+    width: 30%;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    right: 80px;
+    width: 100%;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.footer p {
+    float: right;
+}
+
+.terms {
+    color: #9742F5;
+}
