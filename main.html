@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/2.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <!-- firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-storage.js"></script>
+    <script src="js/firebase.js"></script>
+
+    <script src="js/image-compressor.js"></script>
+    <script src="js/main.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="logo">
+            <img src="images/logo.png" alt="">
+        </div>
+        <div class="main">
+            <h1>Upload and Win!</h1>
+            <div class="display">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+                <div class="four"></div>
+                <div class="progress" id="fileupload" onclick="selectimage()">
+                    <div>
+                        <input type="file" name="file" id="currentimage">
+                        <h6>Drag your photos here</h6>
+                        <br>
+                        <p>
+                            <i class="fas fa-upload"></i>
+                        </p>
+                    </div>
+                    <img src="images/Replace_icon.png" alt="" onclick="del()">
+                </div>
+            </div>
+            <h2>Submit 5 most amazing pictures you've clicked of the most happening places you visited.</h2>
+            <div class="places">
+                <input type="text" id="name" placeholder="Name of the place" required>
+                <input type="text" id="description" placeholder="Description" required>
+                <input type="text" id="location" placeholder="Location" required>
+                <p>* All fields are required.</p>
+            </div>
+            <div class="action">
+                <button class="btn disabled addanother">Save &amp; Add another</button>
+                <button class="btn disabled submit">Submit</button>
+            </div>
+        </div>
+        <div class="footer row">
+            <p class="terms col offset-sm-7">*Terms and Conditions Apply</p>
+            <p class="copyright col ">&#169; 2018 Things in Cities</p>
+            <p onclick="logout()" id="logout">
+                <a href="#">Logout</a>
+            </p>
+        </div>
+    </div>
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true"
+        id="imageModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="text-align: center;">
+                <p>Image</p>
+                <img id="largeImage" src="" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

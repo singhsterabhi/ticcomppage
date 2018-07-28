@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="607px" height="390px" viewBox="0 0 607 390" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>gradient_element_design</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M140.359355,776.854696 C24.8821436,734.241619 1.08314059e-12,621.503744 0,566.230506 C-6.05758369e-13,535.195748 8.59223882,462.963144 60.5157333,405.580113 C101.068539,360.763352 168.052445,325.0045 278.01709,325.0045 C445.1921,325.0045 542.85307,268.669667 571,156 C587.852668,62.7126259 633.186001,16.3792926 707,17 C717.674955,5.99709377 723.012433,0.495640658 723.012433,0.495640658 C723.012433,0.495640658 723.012433,399.330427 723.012433,1197 C697.085966,1129.22291 643.18979,1044.41744 561.323905,942.583573 C438.525078,789.83278 255.836566,819.467773 140.359355,776.854696 Z" id="path-1"></path>
+        <linearGradient x1="50%" y1="26.5079488%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#9742F5" stop-opacity="0.8" offset="0%"></stop>
+            <stop stop-color="#1DD5FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1" transform="translate(0.000000, -510.000000)">
+            <g id="gradient_element_design" transform="translate(299.000000, 1086.000000) scale(-1, 1) translate(-299.000000, -1086.000000) translate(-63.000000, 487.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                <rect id="bg" fill="url(#linearGradient-3)" mask="url(#mask-2)" x="57" y="26" width="603" height="386"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

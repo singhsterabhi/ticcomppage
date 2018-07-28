@@ -2,7 +2,7 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #474747;
     height: 100vh;
-    background: url("../images/background.png");
+    background: url("../images/gradient_element_design.svg");
     background-position: left bottom;
     background-repeat: no-repeat;
     /* background-size: 50%; */
@@ -29,6 +29,11 @@ body {
 
 .footer p {
     float: right;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #474747;
 }
 
 .terms {

@@ -2,7 +2,7 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #474747;
     height: 100vh;
-    background: url("../images/background.png");
+    background: url("../images/gradient_element_design.svg");
     background-position: left bottom;
     background-repeat: no-repeat;
     background-size: 50%;
@@ -125,3 +125,4 @@ button:hover {
 .terms {
     color: #9742F5;
 }
+

@@ -9,12 +9,12 @@
 
 .main>h1 {
     font-weight: 900;
-    padding: 20px;
+    padding: 15px;
 }
 
 .display {
     position: relative;
-    padding: 20px;
+    padding: 15px;
 }
 
 .progress {
@@ -23,30 +23,47 @@
     width: 230px;
     border-width: 4px;
     border-style: solid;
-    border-color: #27CDFF;
-    /* border-color: transparent; */
-    /* border-image: linear-gradient(to bottom, #AC68F7 0%, #27CDFF 100%);
-    border-image-slice: 1; */
+    border-color: #ffffff;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* z-index: 1; */
+    box-shadow: 2px 2px 10px #a1a1a1;
+    cursor: pointer;
+    position: relative;
+}
+
+.progress>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .progress h6 {
     font-size: 15px;
+    font-weight: 700;
 }
 
-.progress p{
+.progress p {
     font-size: 70px;
     color: #9742F5;
+}
+
+.progress img {
+    width: 20px;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: none;
+    z-index: 3;
 }
 
 .one {
     height: 150px;
     width: 150px;
+    background: #ffffff;
     background-image: url("../images/Cafe_icon.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -54,8 +71,9 @@
     border: 2px solid #E1E1E1;
     position: absolute;
     top: 0%;
-    transform: translateX(-240px) translateY(70px)  rotate(-13deg);
-    z-index: -1;
+    transform: translateX(-300px) translateY(70px) rotate(-13deg);
+    /* z-index: -1; */
+    cursor: pointer;
 }
 
 .two {
@@ -69,8 +87,8 @@
     border: 2px solid #E1E1E1;
     position: absolute;
     top: 0%;
-    transform: translateX(-130px) translateY(50px)  rotate(10deg);
-    z-index: -1;
+    transform: translateX(-150px) translateY(50px) rotate(10deg);
+    /* z-index: -1; */
 }
 
 .three {
@@ -84,13 +102,14 @@
     border: 2px solid #E1E1E1;
     position: absolute;
     top: 0%;
-    transform: translateX(180px) translateY(50px) rotate(10deg);
-    z-index: -1;
+    transform: translateX(230px) translateY(50px) rotate(10deg);
+    /* z-index: -1; */
 }
 
 .four {
     height: 150px;
     width: 150px;
+    background: #ffffff;
     background-image: url("../images/Foodtruck_icon.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -98,23 +117,56 @@
     border: 2px solid #E1E1E1;
     position: absolute;
     top: 0%;
-    transform: translateX(300px) translateY(60px) rotate(10deg);
-    z-index: -2;
+    transform: translateX(380px) translateY(60px) rotate(-10deg);
+    /* z-index: -2; */
 }
 
-h2{
+.one:hover,
+.two:hover,
+.three:hover,
+.four:hover {
+    z-index: 3;
+    cursor: pointer;
+    border-color: #a1a1a1;
+    box-shadow: 2px 2px 10px #a1a1a1;
+}
+
+h2 {
     text-align: center;
     width: 450px;
     font-size: 18px;
 }
 
+.places {
+    display: none;
+    flex-direction: column;
+}
+
+.places input {
+    width: 240px;
+    margin-bottom: 10px;
+    border: 0px transparent;
+    border-bottom: 1px solid #636363;
+}
+
+.places input:focus {
+    outline: none;
+    border: 0px transparent;
+    border-bottom: 2px solid #9742F5;
+}
+
+.places p {
+    font-size: 10px;
+    color: red;
+    display: none;
+}
+
 button {
     background-color: #9742F5;
     color: #ffffff;
-    width: 300px;
     border-radius: 20px !important;
-    float: right;
     padding: 5px 30px !important;
+    width: 200px;
 }
 
 button:hover {
@@ -122,9 +174,22 @@ button:hover {
     box-shadow: 0px 2px #858585;
 }
 
+button:focus {
+    outline: none;
+}
+
 .cancel {
     padding: 10px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+}
+
+#currentimage {
+    display: none;
+}
+
+#largeImage {
+    height: auto;
+    width: 100%;
 }
